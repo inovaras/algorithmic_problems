@@ -1,12 +1,13 @@
-from enum import Enum
-
 ort = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+
 
 def step_forward(x, y, dxy):
     return x + dxy[0], y + dxy[1]
 
+
 def change_direction(dir):
     return (dir + 1) % 4
+
 
 n = 7
 m = 10
