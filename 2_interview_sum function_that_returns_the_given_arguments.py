@@ -13,7 +13,6 @@ def sum(*args):
             for i in args:
                 acc.append(i)
             result = reduce(lambda x, y: x+y, acc)
-            print(result)
             return inner
 
     return inner(*args)
